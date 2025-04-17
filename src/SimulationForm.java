@@ -4,16 +4,17 @@ import java.awt.event.*;
 
 public class SimulationForm {
     public static void main(String[] args) {
+        int i = 1;
         JFrame frame = new JFrame("CloudSim Budget Simulation Form");
         frame.setSize(500, 700);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new GridLayout(0, 2, 10, 5));
 
         String[] labels = {
-            "No. of Datacenters", "Hosts per DC", "Host CPU MIPS", "Host RAM (MB)", "Host Storage (GB)",
-            "VMs per DC", "VM CPU MIPS", "VM RAM (MB)", "Cost per VM (INR)", "Total Budget (INR)",
-            "No. of Cloudlets", "Cloudlet Length", "File Size (MB)", "Output Size (MB)",
-            "Scheduling Strategy (TimeShared/SpaceShared)"
+                "No. of Datacenters", "Hosts per DC", "Host CPU MIPS", "Host RAM (MB)", "Host Storage (GB)",
+                "VMs per DC", "VM CPU MIPS", "VM RAM (MB)", "Cost per VM (INR)", "Total Budget (INR)",
+                "No. of Cloudlets", "Cloudlet Length", "File Size (MB)", "Output Size (MB)",
+                "Scheduling Strategy (TimeShared/SpaceShared)"
         };
 
         JTextField[] fields = new JTextField[labels.length];
@@ -51,4 +52,5 @@ public class SimulationForm {
 
         frame.setVisible(true);
     }
+
 }
